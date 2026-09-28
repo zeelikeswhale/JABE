@@ -1,30 +1,177 @@
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
-  position: relative;
-  min-height: 450px;
-  background-image: url('cover.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+
+    background: #d71920;
+
+    z-index: 10;
 }
 
-.navbar::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: inherit;
-  background-size: cover;
-  background-position: center;
-  filter: blur(3px);
-  opacity: 0.65;
-  transform: scale(1.02);
-  background-color: rgba(0, 0, 0, 0.35);
-  background-blend-mode: multiply;
-
-  z-index: 0;
-}
-
+/* Navbar content */
 .navbar > * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    margin: 0 8px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd21f !important;
+}
+
+.nav-link.active {
+    color: #ffd21f !important;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 450px;
+
+    background: url("cover.png") center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* Blur */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+
+    background: url("cover.png") center / cover no-repeat;
+
+    filter: blur(3px);
+    opacity: 0.65;
+
+    z-index: 0;
+}
+
+/* Dark overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.40);
+
+    z-index: 1;
+}
+
+/* Hero text */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 800;
+	font-family: "Black Ops One", system-ui;
+}
+
+.hero-content p {
+    font-size: 30px;
+	font-family: "Smooch Sans", sans-serif;
+
+}
+
+.mainC{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.food-card {
+    width: 18rem;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+	margin-top: 15px;
+	margin-left: 15px;
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+.food-card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: object-fit 0.3s ease;
+}
+
+.food-card:hover .card-img-top {
+    object-fit: contain;
+}
+
+.food-card .card-body {
+    padding: 22px;
+}
+
+.food-card .card-title {
+    color: #d71920;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.food-card .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn-jabe {
+    background: #d71920;
+    color: white;
+    border: none;
+    border-radius: 25px;
+
+    padding: 10px 22px;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.btn-jabe:hover {
+    background: #b51218;
+    color: white;
+    transform: scale(1.05);
 }
