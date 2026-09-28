@@ -1,18 +1,11 @@
-/* =========================
-   NAVBAR
-========================= */
-
 .navbar {
     position: relative;
     width: 100%;
     min-height: 70px;
-
     background: #d71920;
-
     z-index: 10;
 }
 
-/* Navbar content */
 .navbar > * {
     position: relative;
     z-index: 2;
@@ -40,14 +33,9 @@
 }
 
 
-/* =========================
-   HERO IMAGE
-========================= */
-
 .hero {
     position: relative;
     min-height: 450px;
-
     background: url("cover.png") center / cover no-repeat;
 
     display: flex;
@@ -57,7 +45,6 @@
     overflow: hidden;
 }
 
-/* Blur */
 .hero::before {
     content: "";
     position: absolute;
@@ -71,7 +58,6 @@
     z-index: 0;
 }
 
-/* Dark overlay */
 .hero::after {
     content: "";
     position: absolute;
@@ -82,7 +68,6 @@
     z-index: 1;
 }
 
-/* Hero text */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -94,36 +79,41 @@
 .hero-content h1 {
     font-size: 50px;
     font-weight: 800;
-	font-family: "Black Ops One", system-ui;
+    font-family: "Black Ops One", system-ui;
 }
 
 .hero-content p {
     font-size: 30px;
-	font-family: "Smooch Sans", sans-serif;
-
+    font-family: "Smooch Sans", sans-serif;
 }
 
-.mainC{
+
+.mainC {
     box-sizing: border-box;
     max-width: 1100px;
-	max-height: 2200px;
-    margin: 30px auto;
-    margin-bottom: 50px;
-    padding: 30px 10px 50px 15px;
+
+    margin: 30px auto 50px;
+    padding: 30px;
+
     background: white;
+
     border: 1px solid #eee;
     border-radius: 20px;
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
+
 .food-card {
-    width: 18rem;
+    width: 100%;
+
     border: none;
     border-radius: 20px;
+
     overflow: hidden;
-	margin: 15px;
+
     background: white;
-	
+
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 
     transition: 0.3s ease;
@@ -131,19 +121,24 @@
 
 .food-card:hover {
     transform: translateY(-8px);
+
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
 }
+
 
 .food-card .card-img-top {
     width: 100%;
     height: 200px;
+
     object-fit: cover;
-    transition: object-fit 0.3s ease;
+
+    transition: 0.3s ease;
 }
 
 .food-card:hover .card-img-top {
     object-fit: contain;
 }
+
 
 .food-card .card-body {
     padding: 22px;
@@ -151,32 +146,40 @@
 
 .food-card .card-title {
     color: #d71920;
+
     font-size: 24px;
     font-weight: 700;
 }
 
 .food-card .card-text {
     color: #666;
+
     line-height: 1.6;
-	font-size: 14px;
-	
+    font-size: 14px;
 }
+
 
 .btn-jabe {
     background: #d71920;
     color: white;
+
     border: none;
     border-radius: 25px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
     text-decoration: none;
+
     cursor: pointer;
+
     line-height: 1.2;
     min-height: 42px;
 
     padding: 10px 22px;
+
     font-weight: bold;
 
     transition: 0.3s ease;
@@ -186,6 +189,7 @@
 .btn-jabe:focus-visible {
     background: #b51218;
     color: white;
+
     transform: scale(1.05);
 }
 
@@ -203,7 +207,18 @@
 .btn-jabe[aria-disabled="true"] {
     background: #999;
     color: white;
+
     cursor: not-allowed;
     opacity: 0.65;
+
     transform: none;
 }
+
+
+.mainC > h1 {
+    width: 100%;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
