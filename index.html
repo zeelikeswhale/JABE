@@ -1,128 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Cedarville+Cursive&family=Edu+QLD+Hand:wght@400..700&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jabe</title>
+    <link rel="stylesheet" href="style.css" />
+  
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Cedarville+Cursive&family=Edu+QLD+Hand:wght@400..700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
-  <title>Jabe</title>
-  <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jabe</a>
 
-<body>
- 
-  <nav class="navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-   
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
 
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Jabe</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Showcase</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Showcase</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-content">
-    
-     
-    </div>
-  </section>
-
-
-  <main class="mainC d-flex flex-wrap gap-4 p-3">
- 
-    <h1>Taste the Extraordinary </h1>
-
-    <div class="col" style="flex: 1 1 280px; min-width: 280px;">
-      <div class="card food-card h-100">
-        <img src="images/yearningspag.png" class="card-img-top" alt="Jolly Spaghetti">
-
-        <div class="card-body">
-          <h5 class="card-title">Jabe Spaghetti</h5>
-
-          <p class="card-text">
-           Masarap sa unang kagat, pero sa bawat kagat, ikaw pa rin ang hinahanap. Sana ganun kadali kainin ang sakit gaya ng paglimot sa’yo.
-</p>
-
-          <a href="#" class="btn btn-jabe">Order Now</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
 
-   
+    <section class="hero">
+      <div class="hero-content"></div>
+    </section>
 
-    <div class="col" style="flex: 1 1 280px; min-width: 280px;">
-      <div class="card food-card h-100">
-        <img src="images/yearner palabok.png" class="card-img-top" alt="Jolly Spaghetti">
+    <div class="container">
 
-        <div class="card-body">
-          <h5 class="card-title">Garden Palabok</h5>
-
-          <p class="card-text">
-           Malinamnam sa unang kagat, pero habang tumatagal, may kurot na. Parang ikaw—masarap alalahanin, pero masakit tanggapin na hindi na kita makakasama sa susunod na kagat.
-</p>
-          <a href="#" class="btn btn-jabe">Order Now</a>
+      <div class="card showcase-card">
+        <img src="yearningbucket.png" class="showcase-image" alt="Jabe featured dish" />
+        <div class="showcase-content">
+          <div class="showcase-label">Featured on the menu</div>
+          <h2>Lasang Patuloy Ko Pa Ring Hinahanap</h2>
+          <p>May mga lasang nananatili sa alaala kahit matagal na matapos ang huling kagat—tulad ng taong patuloy mo pa ring nami-miss, kahit alam mong hindi na siya babalik.</p>
+          <a href="#" class="showcase-button">Explore the Menu</a>
         </div>
       </div>
+
+
     </div>
 
-      <div class="col" style="flex: 1 1 280px; min-width: 280px;">
-      <div class="card food-card h-100">
-        <img src="images/yearningchicken.png" class="card-img-top" alt="Jolly Spaghetti">
-        <div class="card-body">
-          <h5 class="card-title">Purple Crunch</h5>
+    <main class="mainC d-flex flex-wrap gap-4 p-3">
+      <h1>Taste the Extraordinary</h1>
 
-          <p class="card-text">
-          Malutong sa unang kagat, pero sa huli, ikaw pa rin ang hinahanap. Sana ikaw rin… pero hindi na pala.
-          </p>
+      <div class="col" style="flex: 1 1 280px; min-width: 280px">
+        <div class="card food-card h-100">
+          <img
+            src="images/yearningspag.png"
+            class="card-img-top"
+            alt="Jolly Spaghetti"
+          />
 
-          <a href="#" class="btn btn-jabe">Order Now</a>
+          <div class="card-body">
+            <h5 class="card-title">Jabe Spaghetti</h5>
+
+            <p class="card-text">
+              Masarap sa unang kagat, pero sa bawat kagat, ikaw pa rin ang
+              hinahanap. Sana ganun kadali kainin ang sakit gaya ng paglimot
+              sa’yo.
+            </p>
+
+            <a href="#" class="btn btn-jabe">Order Now</a>
+          </div>
         </div>
       </div>
-    </div>
 
+      <div class="col" style="flex: 1 1 280px; min-width: 280px">
+        <div class="card food-card h-100">
+          <img
+            src="images/yearner palabok.png"
+            class="card-img-top"
+            alt="Jolly Spaghetti"
+          />
 
-  </main>
+          <div class="card-body">
+            <h5 class="card-title">Garden Palabok</h5>
 
+            <p class="card-text">
+              Malinamnam sa unang kagat, pero habang tumatagal, may kurot na.
+              Parang ikaw—masarap alalahanin, pero masakit tanggapin na hindi na
+              kita makakasama sa susunod na kagat.
+            </p>
+            <a href="#" class="btn btn-jabe">Order Now</a>
+          </div>
+        </div>
+      </div>
 
+      <div class="col" style="flex: 1 1 280px; min-width: 280px">
+        <div class="card food-card h-100">
+          <img
+            src="images/yearningchicken.png"
+            class="card-img-top"
+            alt="Jolly Spaghetti"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Purple Crunch</h5>
 
+            <p class="card-text">
+              Malutong sa unang kagat, pero sa huli, ikaw pa rin ang hinahanap.
+              Sana ikaw rin… pero hindi na pala.
+            </p>
 
-</body>
+            <a href="#" class="btn btn-jabe">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </html>
