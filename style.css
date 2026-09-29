@@ -1,225 +1,184 @@
 .navbar {
-    position: relative;
-    width: 100%;
-    min-height: 70px;
-    background: #d71920;
-    z-index: 10;
+  position: relative;
+  width: 100%;
+  min-height: 70px;
+  background: #d71920;
+  z-index: 1000;
 }
 
 .navbar > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 .navbar-brand {
-    color: white !important;
-    font-size: 30px;
-    font-weight: 800;
-    margin: 10px 15px 10px 15px;
+  color: white !important;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 10px 15px 10px 15px;
 }
 
 .nav-link {
-    color: white !important;
-    font-weight: 600;
-    margin: 0 8px;
-    transition: 0.3s ease;
+  color: white !important;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #ffd21f !important;
+  color: #ffd21f !important;
 }
 
 .nav-link.active {
-    color: #ffd21f !important;
+  color: #ffd21f !important;
 }
 
-
 .hero {
-    position: relative;
-    min-height: 450px;
-    background: url("cover.png") center / cover no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
+  position: relative;
+  z-index: 0;
+  min-height: 450px;
+  background: url('ansaket.png') center top / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    inset: -5px;
-
-    background: url("cover.png") center / cover no-repeat;
-
-    filter: blur(3px);
-    opacity: 0.65;
-
-    z-index: 0;
+  content: '';
+  position: absolute;
+  inset: -5px;
+  background: url('ansaket.png') center top / cover no-repeat;
+  z-index: 0;
 }
 
 .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.40);
-
-    z-index: 1;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-
-    text-align: center;
-    color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
 }
 
 .hero-content h1 {
-    font-size: 50px;
-    font-weight: 800;
-    font-family: "Black Ops One", system-ui;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Black Ops One', system-ui;
 }
 
 .hero-content p {
-    font-size: 30px;
-    font-family: "Smooch Sans", sans-serif;
+  font-size: 30px;
+  font-family: 'Smooch Sans', sans-serif;
 }
-
 
 .mainC {
-    box-sizing: border-box;
-    max-width: 1100px;
-
-    margin: 30px auto 50px;
-    padding: 30px;
-
-    background: white;
-
-    border: 1px solid #eee;
-    border-radius: 20px;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 30px auto 50px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-
 .food-card {
-    width: 100%;
-
-    border: none;
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    background: white;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-
-    transition: 0.3s ease;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
 }
 
 .food-card:hover {
-    transform: translateY(-8px);
-
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-
 .food-card .card-img-top {
-    width: 100%;
-    height: 200px;
-
-    object-fit: cover;
-
-    transition: 0.3s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.3s ease;
 }
 
 .food-card:hover .card-img-top {
-    object-fit: contain;
+  object-fit: contain;
 }
 
-
 .food-card .card-body {
-    padding: 22px;
+  padding: 22px;
 }
 
 .food-card .card-title {
-    color: #d71920;
-
-    font-size: 24px;
-    font-weight: 700;
+  color: #d71920;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .food-card .card-text {
-    color: #666;
-
-    line-height: 1.6;
-    font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
 }
 
-
 .btn-jabe {
-    background: #d71920;
-    color: white;
-
-    border: none;
-    border-radius: 25px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    text-decoration: none;
-
-    cursor: pointer;
-
-    line-height: 1.2;
-    min-height: 42px;
-
-    padding: 10px 22px;
-
-    font-weight: bold;
-
-    transition: 0.3s ease;
+  background: #d71920;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.2;
+  min-height: 42px;
+  padding: 10px 22px;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .btn-jabe:hover,
 .btn-jabe:focus-visible {
-    background: #b51218;
-    color: white;
-
-    transform: scale(1.05);
+  background: #b51218;
+  color: white;
+  transform: scale(1.05);
 }
 
 .btn-jabe:focus-visible {
-    outline: 3px solid #ffd21f;
-    outline-offset: 3px;
+  outline: 3px solid #ffd21f;
+  outline-offset: 3px;
 }
 
 .btn-jabe:active {
-    background: #991016;
-    transform: scale(0.98);
+  background: #991016;
+  transform: scale(0.98);
 }
 
 .btn-jabe:disabled,
-.btn-jabe[aria-disabled="true"] {
-    background: #999;
-    color: white;
-
-    cursor: not-allowed;
-    opacity: 0.65;
-
-    transform: none;
+.btn-jabe[aria-disabled='true'] {
+  background: #999;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.65;
+  transform: none;
 }
-
 
 .mainC > h1 {
-    width: 100%;
-    margin-bottom: 20px;
-
-    text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-align: center;
 }
-
